@@ -57,20 +57,6 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="#">N/A</a></li>
-  </ul>
-</details>
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -83,7 +69,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- none yet
+- [Visit](https://bookstore-ovw9.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
