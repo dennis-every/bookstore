@@ -1,0 +1,16 @@
+#nav {
+  height: 80px;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#nav ul li {
+  margin-right: 1rem;
+}
