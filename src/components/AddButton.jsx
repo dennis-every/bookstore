@@ -1,10 +1,5 @@
-/* eslint-disable react/prop-types */
-const AddButton = (props) => {
-  const { onClick } = props;
-
-  return (
-    <button type="submit" onClick={onClick}>Add book</button>
-  );
-};
+const AddButton = () => (
+  <button type="submit">Add book</button>
+);
 
 export default AddButton;
