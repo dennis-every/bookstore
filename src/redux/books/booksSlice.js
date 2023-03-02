@@ -1,6 +1,3 @@
-/* eslint-disable no-param-reassign */
-// https://redux-toolkit.js.org/usage/immer-reducers#linting-state-mutations
-
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -30,13 +27,14 @@ const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state, action) => {
-      state.books = state.books.concat(action.payload);
-    },
-    removeBook: (state, action) => {
-      const bookId = action.payload;
-      state.books = state.books.filter((book) => book.item_id !== bookId);
-    },
+    addBook: (state, action) => ({
+      ...state,
+      books: [...state.books, action.payload],
+    }),
+    removeBook: (state, action) => ({
+      ...state,
+      books: state.books.filter((book) => book.item_id !== action.payload),
+    }),
   },
 });
 
