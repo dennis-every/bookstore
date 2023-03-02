@@ -1,4 +1,6 @@
 /* eslint-disable no-param-reassign */
+// https://redux-toolkit.js.org/usage/immer-reducers#linting-state-mutations
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
