@@ -13,6 +13,7 @@ const Form = () => {
     const id = uuidv4();
     const newBook = {
       item_id: id,
+      category: 'Fiction',
       ...formInputs,
     };
     dispatch(addBook(newBook));
