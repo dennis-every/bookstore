@@ -3,10 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
 import Form from '../components/Form';
 import { fetchBooks } from '../redux/books/booksSlice';
+import './Books.css';
 
 const Books = () => {
   const dispatch = useDispatch();
-  const ifSucceed = useSelector((store) => (store.books.ifSucceed));
+  const ifSucceed = useSelector((store) => store.books.ifSucceed);
   const books = useSelector((store) => store.books.books);
   const isLoading = useSelector((store) => store.books.isLoading);
 
@@ -33,7 +34,6 @@ const Books = () => {
 
   return (
     <section>
-      <h1>List of books</h1>
       <ul>{content}</ul>
       <Form />
     </section>
