@@ -42,6 +42,16 @@
   flex-direction: row;
 }
 
+button {
+  background: #0090ff;
+  border: #0090ff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+}
+
 .links button {
   background: none;
   border: none;
@@ -108,14 +118,4 @@
   font-size: 1rem;
   line-height: 2rem;
   margin-bottom: 1rem;
-}
-
-button {
-  background: #0090ff;
-  border: #0090ff;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  font-weight: 100;
-  color: white;
-  text-transform: uppercase;
 }
