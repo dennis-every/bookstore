@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
 import AddButton from './AddButton';
+import './Form.css';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -32,27 +33,30 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="title">
-        <input
-          type="text"
-          placeholder="title"
-          name="title"
-          value={formInputs.title}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <label htmlFor="author">
-        <input
-          type="text"
-          placeholder="author"
-          name="author"
-          value={formInputs.author}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <AddButton />
+      <h3>Add new book</h3>
+      <div className="form-inputs">
+        <label htmlFor="title">
+          <input
+            type="text"
+            placeholder="Book title"
+            name="title"
+            value={formInputs.title}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <label htmlFor="author">
+          <input
+            type="text"
+            placeholder="Author"
+            name="author"
+            value={formInputs.author}
+            onChange={handleChange}
+            required
+          />
+        </label>
+        <AddButton />
+      </div>
     </form>
   );
 };

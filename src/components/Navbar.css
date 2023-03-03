@@ -1,16 +1,47 @@
 #nav {
-  height: 80px;
+  background: white;
+  height: 4rem;
   display: flex;
-  padding: 1rem;
+  justify-content: space-between;
+  padding: 1rem 3rem;
   align-items: center;
   border-bottom: 1px solid #d5d5d5;
+}
+
+.navLogo {
+  font-size: 1.875rem;
+  letter-spacing: 1.05px;
+  font-weight: bold;
+  color: #0090ff;
+  margin-right: 2rem;
+}
+
+.navLink {
+  font-size: 0.875rem;
+  letter-spacing: 1.3px;
+  color: grey;
+  margin-right: 1.5rem;
+}
+
+.navUser {
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #0090ff;
 }
 
 #nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
+  padding: 0;
 }
 
-#nav ul li {
-  margin-right: 1rem;
+#nav ul li a {
+  text-decoration: none;
 }
