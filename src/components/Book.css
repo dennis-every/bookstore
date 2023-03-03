@@ -110,11 +110,12 @@
   margin-bottom: 1rem;
 }
 
-.chapters button {
+button {
   background: #0090ff;
   border: #0090ff;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-weight: 100;
   color: white;
+  text-transform: uppercase;
 }
