@@ -4,19 +4,17 @@ import { checkStatus } from '../redux/categories/categoriesSlice';
 const Categories = () => {
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.categories);
-
-  return (
-    <section>
-      <button
-        type="button"
-        onClick={() => dispatch(checkStatus())}
-      >
+  let content;
+  if (categories.length > 0) {
+    content = <h2>{categories}</h2>;
+  } else {
+    content = (
+      <button type="button" onClick={() => dispatch(checkStatus())}>
         Check status
       </button>
-      <br />
-      <span>{categories}</span>
-    </section>
-  );
+    );
+  }
+  return <section>{content}</section>;
 };
 
 export default Categories;
